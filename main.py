@@ -1,3 +1,4 @@
-from bot import Bot
+from bot_api import main
 
-Bot().run()
+
+main()

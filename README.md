@@ -26,6 +26,25 @@
 Telegram Bot to store Posts and Documents and it can Access by Special Links.
 I Guess This Will Be Usefull For Many People.....😇. 
 
+## This fork: Bot API deployment
+
+This fork runs on the Telegram **Bot API** and does **not** require `APP_ID` or
+`API_HASH`. Any user can privately send a video or document to the bot; it is
+copied to the private storage channel and the uploader receives an 8-character
+pickup code plus a share link. Sending the pickup code to the bot returns the
+stored file.
+
+Required deployment variables:
+
+* `TG_BOT_TOKEN`
+* `CHANNEL_ID`
+* `DATABASE_URL`
+
+Optional variables:
+
+* `DATABASE_NAME` (defaults to `videobot`)
+* `OWNER_ID` (enables `/stats` for that Telegram user ID)
+
 
 ### Features
 - Fully customisable.
